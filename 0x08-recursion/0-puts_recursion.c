@@ -7,7 +7,11 @@
  */
 void _puts_recursion(char *s)
 {
-	char s = "string of characters"
-		_putchar(%c/n, s);
-	return (0);
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	if (!*s)
+		_putchar("\n");
 }
