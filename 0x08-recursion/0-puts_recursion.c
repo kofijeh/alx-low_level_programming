@@ -3,7 +3,7 @@
 /**
  * _puts_recursion - prints a string
  * @s: string
- * return: 0
+ * return: void
  */
 void _puts_recursion(char *s)
 {
@@ -13,5 +13,8 @@ void _puts_recursion(char *s)
 		_puts_recursion(s + 1);
 	}
 	if (!*s)
+	{
+		_print_rev_recursion(s + 1);
 		_putchar("\n");
+	}
 }
