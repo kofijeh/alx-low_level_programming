@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - Allocates memory using malloc.
+ * create_array - Allocates memory using malloc.
  * @b: the number of bytes to be allocated.
  * Return: A pointer to memory
  */
-void *malloc_checked(unsigned int b)
+void *create_array(unsigned int b)
 {
 	void *mem = malloc(b);
 
